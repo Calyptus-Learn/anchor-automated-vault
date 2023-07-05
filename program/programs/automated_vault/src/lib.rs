@@ -58,9 +58,9 @@ pub mod automated_vault {
             }.data(),
         };
 
-        // 2️⃣ Define a trigger for the thread (every 10 secs).
+        // 2️⃣ Define a trigger for the thread (every 1 minute).
         let trigger = clockwork_sdk::state::Trigger::Cron {
-            schedule: "*/10 * * * * * *".into(), // every 10 secs
+            schedule: "*/1 * * * * * *".into(), // every 1 minute
             skippable: true,
         };
 
