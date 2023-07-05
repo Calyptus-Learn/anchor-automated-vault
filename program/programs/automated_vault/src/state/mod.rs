@@ -1,3 +1,1 @@
-mod vault;
-
-pub use vault::*;
+pub mod vault;

@@ -2,9 +2,9 @@ use anchor_lang::prelude::*;
 
 #[error_code]
 pub enum ErrorCode {
-    #[msg("Amount must be greater than required deposit")]
-    InsufficientBalance,
-
-    #[msg("Withdraw amount cannot be less than deposit")]
-    AmountTooBig,
+    #[msg("Withdraw amount cannot be less than target")]
+    InvalidAmount,
+    
+    #[msg("Target is not reached yet")]
+    TargetNotReached
 }

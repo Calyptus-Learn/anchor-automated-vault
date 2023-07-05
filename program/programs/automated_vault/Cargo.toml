@@ -16,13 +16,6 @@ cpi = ["no-entrypoint"]
 default = []
 
 [dependencies]
-# anchor-lang = "0.28.0"
-# anchor-lang = { version = "0.28.0", features = ["init-if-needed"] }
-# getrandom = { version = "0.2.2", features = ["custom"] }
-# anchor-lang = { git = "https://github.com/coral-xyz/anchor.git", features = ["init-if-needed"]}
-# anchor-spl = { git = "https://github.com/coral-xyz/anchor.git"}
-# clockwork-sdk = "1.4.2"
-
-anchor-lang = { version = "0.28.0", features = ["init-if-needed"]}
-clockwork-sdk = { version = "=2.0.18" }
-solana-program = "=1.14.16"
+clockwork-sdk = "2.0.17"
+anchor-lang ={version="0.27.0",  features = ["init-if-needed"]}
+solana-program = "=1.14.17"
